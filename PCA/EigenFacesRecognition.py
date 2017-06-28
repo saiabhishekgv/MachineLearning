@@ -146,3 +146,31 @@ eigenface_titles = ["eigenface %d" % i for i in range(eigenfaces.shape[0])]
 plot_gallery(eigenfaces, eigenface_titles, h, w)
 
 pl.show()
+
+#OUTPUT: 
+#Best estimator found by grid search:
+#SVC(C=1000.0, cache_size=200, class_weight='balanced', coef0=0.0,
+#  decision_function_shape=None, degree=3, gamma=0.001, kernel='rbf',
+#  max_iter=-1, probability=False, random_state=None, shrinking=True,
+#  tol=0.001, verbose=False)
+#Predicting the people names on the testing set
+#done in 0.067s
+#                   precision    recall  f1-score   support
+#
+#     Ariel Sharon       0.50      0.62      0.55        13
+#     Colin Powell       0.76      0.88      0.82        60
+#  Donald Rumsfeld       0.73      0.70      0.72        27
+#    George W Bush       0.92      0.87      0.89       146
+#Gerhard Schroeder       0.77      0.80      0.78        25
+#      Hugo Chavez       0.75      0.60      0.67        15
+#       Tony Blair       0.88      0.83      0.86        36
+#
+#      avg / total       0.83      0.83      0.83       322
+#
+#[[  8   0   3   2   0   0   0]
+# [  2  53   1   3   0   1   0]
+# [  4   1  19   2   0   0   1]
+# [  1  11   2 127   3   1   1]
+# [  0   2   0   1  20   1   1]
+# [  0   2   0   1   2   9   1]
+# [  1   1   1   2   1   0  30]]
