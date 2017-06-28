@@ -1,6 +1,19 @@
 Machine Learning Concepts
 
 1. Supervised Learning
+	a. Major Projects:
+		i) Titanic Survival Exploration - https://github.com/saiabhishekgv/titanic_survival_exploration
+		ii) Boston Housing Price Prediction - https://github.com/saiabhishekgv/boston_housing
+		iii) POI in ENRON_DATA - https://github.com/saiabhishekgv/POI-in-EnronDataset
+		iv) Finding Donors for CharityML - https://github.com/saiabhishekgv/Finding-Donors-for-CharityML
+	b. Topics:
+		i) Decision Trees 
+		ii) Bayesian Learning
+		
 2. Unsupervised Learning
+	a. Major Projects:
+		i) Identifying Customers by Cluserting - TBD
+	b. Topics:
+		i) PCA - https://github.com/saiabhishekgv/MachineLearning/tree/master/PCA
 3. Reinforcement Learning
 
