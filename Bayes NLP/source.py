@@ -14,6 +14,11 @@ Oh, oh, and I almost forgot. Ahh, I'm also gonna need you to go ahead and come i
 Hello Peter, whats happening? Ummm, I'm gonna need you to go ahead and come in tomorrow. So if you could be here around 9 that would be great, mmmk... oh oh! and I almost forgot ahh, I'm also gonna need you to go ahead and come in on Sunday too, kay. We ahh lost some people this week and ah, we sorta need to play catch up.
 '''
 
+corrupted_memo = '''
+Yeah, I'm gonna --- you to go ahead --- --- complain about this. Oh, and if you could --- --- and sit at the kids' table, that'd be --- 
+'''
+
+
 #
 #   Maximum Likelihood Hypothesis
 #
@@ -31,6 +36,10 @@ print sample_memo
 
 
 def NextWordProbability(sampletext,word):
+    words_list = sample_memo.strip().split()
+    print words_list
+    words_to_guess = ["ahead","could"]
+
     words_list= sampletext.split(' ')
     result = {}
     count = 0
