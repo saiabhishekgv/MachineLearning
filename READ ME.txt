@@ -16,4 +16,8 @@ Machine Learning Concepts
 	b. Topics:
 		i) PCA - https://github.com/saiabhishekgv/MachineLearning/tree/master/PCA
 3. Reinforcement Learning
-
+4. Deep Learning
+	a. Major Projects :
+		
+	b. Topics : 
+		i) Image Classificaition using TensorFlow
