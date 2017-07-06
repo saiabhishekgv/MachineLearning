@@ -20,4 +20,4 @@ Machine Learning Concepts
 	a. Major Projects :
 		
 	b. Topics : 
-		i) Image Classificaition using TensorFlow
+		i) Image Classificaition using TensorFlow - https://github.com/saiabhishekgv/MachineLearning/tree/master/Tensorflow
