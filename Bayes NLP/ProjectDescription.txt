@@ -1,0 +1,23 @@
+Bayes NLP Classifier
+
+Project Description :
+
+   we will compute the optimal label for a second missing word in a row
+   based on the possible words that could be in the first blank
+
+   We have the NextWordProbability(), LaterWords() in this file that are discussed in detail.
+
+definition NextWordProbability(sampletext,word):
+'''@param sampletext: a sample of text to draw from
+   @param word: a word occuring before a corrupted sequence
+   @returns distance: how much distance these two variables are apart.
+   '''
+
+definition LaterWords(sample,word,distance):
+   '''@param sample: a sample of text to draw from
+      @param word: a word occuring before a corrupted sequence
+      @param distance: how many words later to estimate (i.e. 1 for the next word, 2 for the word after that)
+      @returns: a single word which is the most likely possibility
+      '''
+
+Output : A single word which is the most likely possibility.

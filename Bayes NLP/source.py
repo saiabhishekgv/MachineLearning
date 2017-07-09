@@ -3,7 +3,7 @@
 #
 #   Bayes Optimal Classifier
 #
-#   In this quiz we will compute the optimal label for a second missing word in a row
+#   we will compute the optimal label for a second missing word in a row
 #   based on the possible words that could be in the first blank
 #
 #   Finish the procedurce, LaterWords(), below
@@ -19,7 +19,7 @@ Hello Peter, whats happening? Ummm, I'm gonna need you to go ahead and come in t
 '''
 
 corrupted_memo = '''
-Yeah, I'm gonna --- you to go ahead --- --- complain about this. Oh, and if you could --- --- and sit at the kids' table, that'd be --- 
+Yeah, I'm gonna --- you to go ahead --- --- complain about this. Oh, and if you could --- --- and sit at the kids' table, that'd be ---
 '''
 
 data_list = sample_memo.strip().split()
@@ -47,11 +47,11 @@ def LaterWords(sample,word,distance):
     @param distance: how many words later to estimate (i.e. 1 for the next word, 2 for the word after that)
     @returns: a single word which is the most likely possibility
     '''
-    
+
     # TODO: Given a word, collect the relative probabilities of possible following words
     # from @sample. You may want to import your code from the maximum likelihood exercise.
     word1_counter = NextWordProbability(sample, word)
-  
+
     # TODO: Repeat the above process--for each distance beyond 1, evaluate the words that
     # might come after each word, and combine them weighting by relative probability
     # into an estimate of what might appear next.
@@ -61,7 +61,7 @@ def LaterWords(sample,word,distance):
     @param distance: how many words later to estimate (i.e. 1 for the next word, 2 for the word after that)
     @returns: a single word which is the most likely possibility
     '''
-    
+
     total = len(word1_counter)
     from collections import defaultdict
     word2_probs = defaultdict(list)
@@ -81,7 +81,7 @@ def LaterWords(sample,word,distance):
         if prob > max_value:
             max_word = word2
             max_value = prob
-    
+
     return max_word
-    
+
 print LaterWords(sample_memo,"ahead",2)
