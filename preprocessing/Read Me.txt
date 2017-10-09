@@ -1,0 +1,16 @@
+pre - processing  :
+
+It is the basic step to perform before working on the data. Here, I did applied data pre-processing and 
+feature selection techniques to gene expression datasets for cancers/diseases.
+A small example of gene expression datasets is the colon cancer dataset, which contains 62 samples
+collected from colon-cancer patients; among those samples, 40 are tumor biopsies labeled as “positive” and
+22 are normal tissue biopsies labeled as ”negative”. For simplicity, assume that each
+such dataset has just two classes. Each tuple (row) in the data consists of the readings for the genes, and
+the class (which is the last column). Each gene is an attribute. The columns are separated by ”,”, which
+is a commonly used format in data mining. The dataset can be is in p1colon.txt file.
+
+Techniques used are :
+1. Equi Density Binning
+2. Entropy based Binning
+3. Correlation Coefficient.
+
