@@ -12,6 +12,7 @@ public class Driver {
 	
 	static int numberOfSamples = 0;
 	static int numberOfAttributes = 0;
+	static int numCorrelatedPairs= 0;
 	
 	static ArrayList<ArrayList<Double>> input = new ArrayList<ArrayList<Double>>();
 	static ArrayList<ArrayList<Double>> inputTranspose = new ArrayList<ArrayList<Double>>();
@@ -84,7 +85,10 @@ public class Driver {
 		dirPath = file.getAbsoluteFile().getParentFile().getAbsolutePath();
 		readInput(args[0]);
 		inputTranspose = transpose(input);
-		
+		numCorrelatedPairs = 500;
+		Correlation obj = new Correlation();
+		obj.computeCorrelation(inputTranspose,numCorrelatedPairs);
+		//obj.writeCorrelation();
 				
 	}
 
