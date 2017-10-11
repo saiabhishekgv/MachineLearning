@@ -85,10 +85,16 @@ public class Driver {
 		dirPath = file.getAbsoluteFile().getParentFile().getAbsolutePath();
 		readInput(args[0]);
 		inputTranspose = transpose(input);
-		numCorrelatedPairs = 500;
-		Correlation obj = new Correlation();
-		obj.computeCorrelation(inputTranspose,numCorrelatedPairs);
-		//obj.writeCorrelation();
+		
+		// 2. Compute correlation between pair of genes
+			numCorrelatedPairs = 500;
+
+			//create correlation object
+			Correlation obj = new Correlation();
+			
+			// call for compute correlation method 
+			obj.computeCorrelation(inputTranspose,numCorrelatedPairs);
+			//obj.writeCorrelation();
 				
 	}
 

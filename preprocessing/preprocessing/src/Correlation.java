@@ -25,7 +25,9 @@ public class Correlation {
 	static String dirPath = null;
 	static Double S_entropy = 0.0;
 	
-	
+	// mean for all genes. 
+	// for each gene : get the sum of samples in that gene and divide it with number of samples in that gene.
+	// append this gene value into arraylist(so that we can use it later with O(1) time complexity
 	public void mean(ArrayList<ArrayList<Double>> input2 ){
 		int r = input2.size();
 		int col = input2.get(0).size();
@@ -39,6 +41,10 @@ public class Correlation {
 		}
 	}
 	
+	// Standard Deviation for all genes. 
+	// for each gene : get the sum of ( value of each sample-mean) in that gene and divide it with number of samples in that gene.
+	// perform square root of the value to get standard deviation of that gene.
+	// append this gene value into arraylist(so that we can use it later with O(1) time complexity
 	public void stdDev(ArrayList<ArrayList<Double>> input2 ){
 		int r = input2.size();
 		int col = input2.get(0).size();
@@ -56,8 +62,11 @@ public class Correlation {
 		System.out.println("Calculating Correlations");
 		int numberOfgenes = input2.size();
 		int numberOfSamples = input2.get(0).size();
+		// Get the mean values of all genes.
 		mean(input2);
+		// Get the standard deviation values of all genes.
 		stdDev(input2);
+		// Print the Mean and standard Deviation values 
 		System.out.println("Mean for all the genes are : "+ meanValue );
 		System.out.println("standard deviation for all the genes are : "+ stdDevValue);
 	}
